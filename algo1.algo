@@ -1,0 +1,21 @@
+ALGORITHM sentence
+VAR
+    s:string;
+    x,z:integer:=0;
+    y:integer:=1;
+    i:integer:=0;
+BEGIN
+    write("write a sentence")
+    read(s)
+    FOR i FROM 0 TO s.length-1 STEP 1  DO
+        x=x+1
+        IF (s[j]==" ") THEN
+            y=y+1
+        ELSEIF (s[k]=={"a","i","e","u","o"}) THEN
+            z=z+1
+        END_IF
+    END_FOR 
+    write("the length of the sentence is:",x)
+    write("the number of words is:",y)
+    write("the number of vowels sis",z)
+END
